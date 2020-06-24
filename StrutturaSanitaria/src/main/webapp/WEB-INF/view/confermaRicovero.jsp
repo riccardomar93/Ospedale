@@ -8,7 +8,5 @@
 </head>
 <body>
 
-<form action="mapana"></form>
-
 </body>
 </html>
