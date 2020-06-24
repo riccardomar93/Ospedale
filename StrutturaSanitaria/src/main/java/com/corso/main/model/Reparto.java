@@ -13,19 +13,16 @@ public class Reparto {
 	
 	private String nome;
 	
-	private int posti_disponibili;
-	
 	private int posti_totali;
 	
 	private Integer id_responsabile;
 	
 	private int numero_personale;
 
-	public Reparto(String nome, int posti_disponibili, int posti_totali, Integer id_responsabile,
+	public Reparto(String nome, int posti_totali, Integer id_responsabile,
 			int numero_personale) {
 		super();
 		this.nome = nome;
-		this.posti_disponibili = posti_disponibili;
 		this.posti_totali = posti_totali;
 		this.id_responsabile = id_responsabile;
 		this.numero_personale = numero_personale;
@@ -49,13 +46,6 @@ public class Reparto {
 		this.nome = nome;
 	}
 
-	public int getPosti_disponibili() {
-		return posti_disponibili;
-	}
-
-	public void setPosti_disponibili(int posti_disponibili) {
-		this.posti_disponibili = posti_disponibili;
-	}
 
 	public int getPosti_totali() {
 		return posti_totali;
