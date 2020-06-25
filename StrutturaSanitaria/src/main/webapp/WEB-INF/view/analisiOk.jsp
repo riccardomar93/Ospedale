@@ -57,7 +57,7 @@ background:yellow;
 
 <div class ="wrap">
 
-	<form action="inserisci" method="get">
+	<form action="datiAnalisi" method="get">
 	<div align="center">
 		<h2>INSERISCI I TUOI DATI</h2>
 		<input type="text" name="Nome" placeholder="Nome">
