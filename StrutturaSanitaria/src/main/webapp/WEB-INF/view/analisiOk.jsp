@@ -8,7 +8,7 @@
 <style>
 
 body{
-background : url(sfondoOspedale.jpg);
+background : url(C:/Users/ricca/OneDrive/Desktop/sfondoRic_Analisi.jpg);
 }
 .wrap{
 
@@ -43,9 +43,10 @@ width=90%;
 }
 input [type="submit"]{
 width=95%;
-background:95%;
+background:orange;
 cursor:pointer;
-font-size:bold;
+font-size:18px;
+font-weight:bold;
 color:white;
 }
 input [type="submit"]:hover{
@@ -57,7 +58,7 @@ background:yellow;
 
 <div class ="wrap">
 
-	<form action="datiAnalisi" method="get">
+	<form action="inserisci" method="get">
 	<div align="center">
 		<h2>INSERISCI I TUOI DATI</h2>
 		<input type="text" name="Nome" placeholder="Nome">
