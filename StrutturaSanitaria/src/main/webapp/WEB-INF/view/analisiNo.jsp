@@ -7,8 +7,6 @@
 <title>CERCA DISPONIBILITA</title>
 </head>
 <body>
- <h1>NESSUNA DISPONIBILITA' PER LA DATA SELEZIONATA, INSERISCI UN'ALTRA DATA:</h1><br><hr>
-
  <h1>CERCA DISPONIBILITA' PER DATA</h1><br>
  
 <form action="maplabo">
@@ -23,4 +21,4 @@
 </form>
 
 </body>
-</html
+</html>

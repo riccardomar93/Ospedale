@@ -14,7 +14,7 @@
 
 <a href ="ricovero.jsp">Richiedi un ricovero</a><br><hr>
 
-<a href ="analisi.jsp">Prenota analisi del sangue</a><br><hr>
+<a href ="analisi">Prenota analisi del sangue</a><br><hr>
 
 
 
