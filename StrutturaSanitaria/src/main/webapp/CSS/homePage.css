@@ -1,0 +1,59 @@
+@charset "ISO-8859-1";
+.banner-area{
+	
+	background-image: url(homePage.jpg);
+	background-position:center center;
+	-webkit-background-size:cover;
+	background-size:cover;
+	height:100vh;
+}
+body{
+	
+	margin:0;
+	padding:0;
+	
+}
+header{
+	padding:15px 60px;
+
+}
+.menu{
+	width:62%;
+	float:right;
+	list-style:none;
+}
+
+.menu li{
+	width : 100px;
+	lenght:150px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	color:#fff;
+	font-size:13px;
+	float:left;
+
+}
+.menu li a{
+	text-decoration:none;
+	font-family:baloo;
+	color:#black ;
+	text-transform:uppercase;
+}
+.menu li:hover{
+	background:yellow;
+}
+.menu li:hover a{
+	color:#000;
+}
+.logo{
+	text-decoration:none;
+	color:balck;
+	font-size:20px;
+	font-family:big-john;
+	padding:20px 0;
+	width:20%;
+	float:left;	
+}
+
+

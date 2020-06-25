@@ -7,18 +7,20 @@
 <title>CERCA DISPONIBILITA</title>
 </head>
 <body>
- <h1>CERCA DISPONIBILITA' PER DATA</h1><br>
+ <h1 align="center">CERCA DISPONIBILITA' PER DATA DI INTERESSE</h1><br>
+ <p align ="center">NESSUNA DISPONIBILITA' PER LA DATA SELEZIONATA
  
-<form action="maplabo">
+ <div align="center">
+ 
+	<form action="maplabo" method="get">
 
-	<h5>Inserisci data desiderata :</h5><br>
-	<input type ="text" name="data">
-	<br>
-	<input type = "submit" value="CERCA DISPONIBILITA'">
+		<h5>Inserisci data desiderata :</h5><br>
+		
+		<input type ="text" name="data"><br><br>
+		<input type = "submit" value="CERCA DISPONIBILITA'">
 
-
-
-</form>
+	</form>
+</div>
 
 </body>
 </html>
