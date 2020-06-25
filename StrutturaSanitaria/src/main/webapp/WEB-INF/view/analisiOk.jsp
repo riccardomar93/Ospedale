@@ -34,11 +34,23 @@ border-radius:10px;
 }
 input{
 padding:10px;
-margin:5px;
+margin:20px;
 border-radius:5px;
 border:none;
 }
-
+input [type="text"]{
+width=90%;
+}
+input [type="submit"]{
+width=95%;
+background:95%;
+cursor:pointer;
+font-size:bold;
+color:white;
+}
+input [type="submit"]:hover{
+background:yellow;
+}
 </style>
 </head>
 <body>
@@ -46,12 +58,13 @@ border:none;
 <div class ="wrap">
 
 	<form action="inserisci" method="get">
-
+	<div align="center">
 		<h2>INSERISCI I TUOI DATI</h2>
-		<input type="text" name="Nome" placeholder="nome">
+		<input type="text" name="Nome" placeholder="Nome">
 		<input type="text" name="Cognome" placeholder="Cognome">
-		
-
+		<input type="text" name="Cod_Ricetta" placeholder="Codice Ricetta">
+		<input type="submit" name="INVIO">
+	</div>
 
 
 
