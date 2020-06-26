@@ -5,21 +5,14 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>CERCA DISPONIBILITA</title>
+<meta http-equiv="refresh" content="5;URL=redirectAnalisi">
 </head>
 <body>
- <h1 align="center">CERCA DISPONIBILITA' PER DATA DI INTERESSE</h1><br>
- <p align ="center">NESSUNA DISPONIBILITA' PER LA DATA SELEZIONATA
- 
- <div align="center">
- 
-	<form action="maplabo" method="get">
+<div align="center">
 
-		<h5>Inserisci data desiderata :</h5><br>
-		
-		<input type ="text" name="data"><br><br>
-		<input type = "submit" value="CERCA DISPONIBILITA'">
-
-	</form>
+ 				<h1 align ="center">NESSUNA DISPONIBILITA' PER LA DATA SELEZIONATA</h1>
+ 				<h5 align ="center">SARAI REINDIRIZZATO ALLA RICERCA DELLA DISPONIBILITA'</h5><br><br>
+ 				Non vuoi aspettare? <a href="redirectAnalisi">CLICCA QUI</a>
 </div>
 
 </body>

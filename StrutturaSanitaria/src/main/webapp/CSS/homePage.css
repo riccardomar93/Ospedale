@@ -1,7 +1,16 @@
 @charset "ISO-8859-1";
+
 .banner-area{
 	
 	background-image: url(homePage.jpg);
+	background-position:center center;
+	-webkit-background-size:cover;
+	background-size:cover;
+	height:100vh;
+}
+.banner-area2{
+	
+	background-image: url(analisi.jpg);
 	background-position:center center;
 	-webkit-background-size:cover;
 	background-size:cover;

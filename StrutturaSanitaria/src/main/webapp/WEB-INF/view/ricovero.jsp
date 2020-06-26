@@ -8,7 +8,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style>body{
 	
-	background :url();
+	background :url(CSS/ricovero.jpg);
+	background-position:center center;
+	-webkit-background-size:cover;
+	background-size:cover;
+	height:100vh;
 	
 	}
 	.contact-form{
@@ -20,7 +24,7 @@
 	padding:20px;
 	
 	}
-	input [type=text],select{
+	input [type=text],[type=date],select{
 	width:100%;
 	padding:12px 20px;
 	margin:8px 0;
@@ -37,57 +41,22 @@
 <div class="contact-form">
 
 <form action="maprico" method="get">
-	
-	<div class="banner-area">
-	<div class="container">
-		<div class="row">
-			<h5>CERCA DISPONIBILITA' PER DATA</h5>
-		</div>
-		<div class="row">
-	        <div class='col-sm-6'>
-	        	
-		            <div class="form-group">
-		                <div class='input-group date' id='datepicker'>
-		                    <input type='text' name="Data" class="form-control" />
-		                    <span class="input-group-addon">
-		                        <span class="glyphicon glyphicon-calendar"></span>
-		                    </span>
-		                </div>
-		            </div>
-		            
-		        
-	        </div>
-	    </div>
-	</div>
-</div>
-
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
-	<script >
-	    $(function () {
-	        $('#datepicker').datepicker({
-	            format: "dd/mm/yyyy",
-	            autoclose: true,
-	            todayHighlight: true,
-		        showOtherMonths: true,
-		        selectOtherMonths: true,
-		        autoclose: true,
-		        changeMonth: true,
-		        changeYear: true,
-		        orientation: "button"
-	        });
-	    });
-	</script>
+			
+			<h2>CERCA DISPONIBILITA' PER DATA E REPARTO</h2>
+				<label for ="data">Data</label><br>
+				<input type="date" name ="data">
+				
 		
 		<label for ="reparto">Reparto</label><br>
 		<select>
 		<option value = "Ortopedia">Ortopedia</option>
-		<option value = "Ginecoglogia">Ginecoglogia</option>
+		<option value = "Ginecoglogia">Ginecologia</option>
 		</select>
 		<input type="submit" value ="INVIO">
-	</form>
 
 
 
+</form>
 </div>
 </body>
 </html>

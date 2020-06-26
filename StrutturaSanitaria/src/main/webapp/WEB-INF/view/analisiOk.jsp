@@ -8,7 +8,7 @@
 <style>
 
 body{
-background : url(C:/Users/ricca/OneDrive/Desktop/sfondoRic_Analisi.jpg);
+background : url(CSS/analisi.jpg);
 }
 .wrap{
 
@@ -58,12 +58,12 @@ background:yellow;
 
 <div class ="wrap">
 
-	<form action="inserisci" method="get">
+	<form action="inserimentoAnalisi" method="get">
 	<div align="center">
 		<h2>INSERISCI I TUOI DATI</h2>
-		<input type="text" name="Nome" placeholder="Nome">
-		<input type="text" name="Cognome" placeholder="Cognome">
-		<input type="text" name="Cod_Ricetta" placeholder="Codice Ricetta">
+		<input type="text" name="nome_paziente" placeholder="Nome">
+		<input type="text" name="cognome_paziente" placeholder="Cognome">
+		<input type="text" name="cod_ricetta" placeholder="Codice Ricetta">
 		<input type="submit" name="INVIO">
 	</div>
 
