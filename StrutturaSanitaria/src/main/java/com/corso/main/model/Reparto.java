@@ -1,5 +1,6 @@
 package com.corso.main.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -9,13 +10,17 @@ import javax.persistence.Table;
 public class Reparto {
 
 	@Id
-	private Integer id_reparto;
+	
+	@Column(name="id_reparto")
+	private Integer idreparto;
 	
 	private String nome;
 	
 	private int posti_totali;
 	
+	
 	private Integer id_responsabile;
+	
 	
 	private int numero_personale;
 
@@ -30,12 +35,12 @@ public class Reparto {
 
 	public Reparto() {}
 
-	public Integer getId_reparto() {
-		return id_reparto;
+	public Integer getIdreparto() {
+		return idreparto;
 	}
 
-	public void setId_reparto(Integer id_reparto) {
-		this.id_reparto = id_reparto;
+	public void setIdreparto(Integer idreparto) {
+		this.idreparto = idreparto;
 	}
 
 	public String getNome() {
