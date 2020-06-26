@@ -1,5 +1,6 @@
 package com.corso.main.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -20,27 +21,31 @@ public class Ricovero {
 
     private int stato_ricovero;
 
-    private Integer id_reparto;
+    @Column(name = "id_reparto")
+
+    private Integer idReparto;
 
     private String nome_paziente;
 
     private String cognome_paziente;
 
-    public Ricovero(String data_inizio, String data_fine, int stato_ricovero, Integer id_reparto, String nome_paziente,
+    public Ricovero(String data_inizio, String data_fine, int stato_ricovero, Integer idReparto, String nome_paziente,
 	    String cognome_paziente) {
 	super();
 	this.data_inizio = data_inizio;
 	this.data_fine = data_fine;
 	this.stato_ricovero = stato_ricovero;
-	this.id_reparto = id_reparto;
+	this.idReparto = idReparto;
 	this.nome_paziente = nome_paziente;
 	this.cognome_paziente = cognome_paziente;
     }
 
-    public Ricovero(String nome_paziente, String cognome_paziente) {
+    public Ricovero(String nome_paziente, String cognome_paziente, int idReparto, String data_inizio) {
 	super();
 	this.nome_paziente = nome_paziente;
 	this.cognome_paziente = cognome_paziente;
+	this.idReparto = idReparto;
+	this.data_inizio = data_inizio;
     }
 
     public Ricovero() {
@@ -78,12 +83,12 @@ public class Ricovero {
 	this.stato_ricovero = stato_ricovero;
     }
 
-    public Integer getId_reparto() {
-	return id_reparto;
+    public Integer getIdReparto() {
+	return idReparto;
     }
 
-    public void setId_reparto(Integer id_reparto) {
-	this.id_reparto = id_reparto;
+    public void setIdReparto(Integer idReparto) {
+	this.idReparto = idReparto;
     }
 
     public String getNome_paziente() {
