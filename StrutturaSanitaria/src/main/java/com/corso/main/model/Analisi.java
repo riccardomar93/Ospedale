@@ -25,6 +25,18 @@ public class Analisi {
 		this.cognome_paziente = cognome_paziente;
 		this.data = data;
 	}
+	
+
+
+	public Analisi(String id_ricetta, String nome_paziente, String cognome_paziente, String data) {
+		super();
+		this.id_ricetta = id_ricetta;
+		this.nome_paziente = nome_paziente;
+		this.cognome_paziente = cognome_paziente;
+		this.data = data;
+	}
+
+
 
 	public Analisi() {}
 
