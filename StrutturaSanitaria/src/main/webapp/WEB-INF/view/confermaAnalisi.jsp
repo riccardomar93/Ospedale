@@ -7,12 +7,53 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>CONFERMA ANALISI </title>
+<style>
+	body{
+	
+	background :url(CSS/analisi.jpg);
+	background-position:center center;
+	-webkit-background-size:cover;
+	background-size:cover;
+	height:100vh;
+	
+	}
+	.contact-form{
+	
+	max-width:600px;
+	margin:auto;
+	border-radius:5px;
+	background:#dbdcdc;
+	padding:20px;
+	margin-top: 200px;
+	
+	}
+	input [type=text],[type=date],select{
+	width:100%;
+	padding:12px 20px;
+	margin:8px 0;
+	display:inline-block;
+	border:1px solid #ccc;
+	border-radius:4px;
+	box-sizing:border-box;
+	}
+	</style>
 </head>
 <body>
-		<h1>RIEPILOGO DATI:</h1>
-<c:forEach items="${analisi}"></c:forEach>
+		<h1>CONFERMA PRENOTAZIONE ANALISI:</h1>
+	<div class="contact-form">	
+	<h3>RIEPILOGO PRENOTAZIONE : </h3>		
+<% 
+	
+	out.println("NOME PAZIENTE : "+request.getAttribute("nome_paziente"));
+	out.println("COGNOME PAZIENTE : "+request.getAttribute("cognome_paziente"));
+	out.println("NOME RESPONSABILE : "+request.getAttribute("nome_responsabile"));
+	out.println("COGNOME RESPONSABILE : "+request.getAttribute("cognome_responsabile"));
+	out.println("CODICE RICETTA : "+request.getAttribute("cod_ricetta"));
+	out.println("IN DATA : "+request.getAttribute("data"));
 
+%>
 
+	</div>
 
 </body>
 </html>

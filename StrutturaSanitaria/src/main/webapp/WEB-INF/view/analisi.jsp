@@ -52,21 +52,7 @@
 		
 		</form>
 		</div>
-<!-- 		<div class="row"> -->
-<!-- 	        <div class='col-sm-6'> -->
-<!-- 	        	<form action="maplabo" method="get"> -->
-<!-- 		            <div class="form-group"> -->
-<!-- 		                <div class='input-group date' id='datepicker'> -->
-<!-- 		                    <input type='text' class="form-control" /> -->
-<!-- 		                    <span class="input-group-addon"> -->
-<!-- 		                        <span class="glyphicon glyphicon-calendar"></span> -->
-<!-- 		                    </span> -->
-<!-- 		                </div> -->
-<!-- 		            </div> -->
-<!-- 		            <input type="submit" value="INVIO"> -->
-<!-- 		        </form> -->
-<!-- 	        </div> -->
-<!-- 	    </div> -->
+
 
 
 	

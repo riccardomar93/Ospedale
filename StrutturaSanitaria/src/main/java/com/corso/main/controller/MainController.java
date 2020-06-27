@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class MainController {
 	
-	@GetMapping("/")
+	
+	@GetMapping(value = "/homePage")
 	public String getIndex() {
 		return "index";
 	}
-	
 	@GetMapping(value = "/analisi")
 	public String linkAnalisi() {
 		return "analisi";
@@ -32,6 +32,10 @@ public class MainController {
 	@GetMapping(value = "/redirectRicover")
 	public String redirectRicovero() {
 		return "ricovero";
+	}
+	@GetMapping(value = "/redirectLogin")
+	public String redirectLogin() {
+		return "login";
 	}
 	
 	

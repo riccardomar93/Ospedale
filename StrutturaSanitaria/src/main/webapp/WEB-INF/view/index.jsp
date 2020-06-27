@@ -22,19 +22,7 @@
 		</header>
 		
 </div>
-<!--
-<h1>BENVENUTI NELLA HOME PAGE DELL'OSPEDALE SOLVING TEAM-NTT DATA</h1><br><br>
 
-<div align="right"><a href="login">Login</a></div>
-
-<div>
-<a href ="ricovero">Richiedi un ricovero</a><br><hr>
-
-<a href ="analisi">Prenota analisi del sangue</a><hr>
-
-
-</div>
--->
 
 
 

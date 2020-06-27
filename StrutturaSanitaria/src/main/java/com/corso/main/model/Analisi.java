@@ -1,6 +1,7 @@
 package com.corso.main.model;
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -11,7 +12,8 @@ public class Analisi {
 
 	
 	@Id
-	private String id_ricetta;
+	@Column(name="id_ricetta")
+	private String idRicetta;
 	
 	private String nome_paziente;
 	
@@ -28,12 +30,12 @@ public class Analisi {
 
 	public Analisi() {}
 
-	public String getId_ricetta() {
-		return id_ricetta;
+	public String getidRicetta() {
+		return idRicetta;
 	}
 
-	public void setId_ricetta(String id_ricetta) {
-		this.id_ricetta = id_ricetta;
+	public void setidRicetta(String idRicetta) {
+		this.idRicetta = idRicetta;
 	}
 
 	public String getNome_paziente() {

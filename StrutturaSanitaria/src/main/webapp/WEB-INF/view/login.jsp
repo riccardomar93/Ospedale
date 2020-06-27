@@ -18,7 +18,7 @@
 <div class="loginbox">
 
 	<h1>Login</h1>
-	<form action="login" method="get">
+	<form action="controlloCredenziali" method="get">
 			
 			<p>Username</p> 
 			<input type="text" name="username" placeholder="Inserisci Username">
