@@ -1,5 +1,6 @@
 package com.corso.main.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -9,13 +10,14 @@ import javax.persistence.Table;
 public class Responsabile {
 	
 	@Id
+	
 	private Integer id_responsabile;
 	
 	private String nome;
 	
 	private String cognome;
-	
-	private Integer id_reparto;
+	@Column(name="id_Reparto")
+	private Integer idReparto;
 	
 	public Responsabile() {}
 	
@@ -48,12 +50,12 @@ public class Responsabile {
 		this.cognome = cognome;
 	}
 
-	public Integer getId_reparto() {
-		return id_reparto;
+	public Integer getidReparto() {
+		return idReparto;
 	}
 
-	public void setId_reparto(Integer id_reparto) {
-		this.id_reparto = id_reparto;
+	public void setidReparto(Integer idReparto) {
+		this.idReparto = idReparto;
 	}
 	
 	

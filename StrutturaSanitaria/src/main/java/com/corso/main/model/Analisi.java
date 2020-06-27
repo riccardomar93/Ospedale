@@ -1,7 +1,10 @@
 package com.corso.main.model;
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -11,7 +14,9 @@ public class Analisi {
 
 	
 	@Id
-	private String id_ricetta;
+    @Column(name="id_ricetta", unique=true, nullable = false)
+	
+	private String idRicetta;
 	
 	private String nome_paziente;
 	
@@ -19,18 +24,27 @@ public class Analisi {
 	
 	private String data;
 
-	public Analisi(String nome_paziente, String cognome_paziente, String data) {
-		super();
-		this.nome_paziente = nome_paziente;
-		this.cognome_paziente = cognome_paziente;
-		this.data = data;
-	}
+//	public Analisi(String nome_paziente, String cognome_paziente, String data) {
+//		super();
+//		this.nome_paziente = nome_paziente;
+//		this.cognome_paziente = cognome_paziente;
+//		this.data = data;
+//	}
 	
 
 
-	public Analisi(String id_ricetta, String nome_paziente, String cognome_paziente, String data) {
+	public Analisi(String idRicetta, String nome_paziente, String cognome_paziente) {
 		super();
-		this.id_ricetta = id_ricetta;
+		this.idRicetta = idRicetta;
+		this.nome_paziente = nome_paziente;
+		this.cognome_paziente = cognome_paziente;
+	}
+
+
+
+	public Analisi(String idRicetta, String nome_paziente, String cognome_paziente, String data) {
+		super();
+		this.idRicetta = idRicetta;
 		this.nome_paziente = nome_paziente;
 		this.cognome_paziente = cognome_paziente;
 		this.data = data;
@@ -40,12 +54,12 @@ public class Analisi {
 
 	public Analisi() {}
 
-	public String getId_ricetta() {
-		return id_ricetta;
+	public String getIdRicetta() {
+		return idRicetta;
 	}
 
-	public void setId_ricetta(String id_ricetta) {
-		this.id_ricetta = id_ricetta;
+	public void setIdRicetta(String idRicetta) {
+		this.idRicetta = idRicetta;
 	}
 
 	public String getNome_paziente() {

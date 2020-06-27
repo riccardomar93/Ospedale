@@ -9,7 +9,7 @@ import javax.persistence.Table;
 public class Reparto {
 
 	@Id
-	private Integer id_reparto;
+	private Integer idReparto;
 	
 	private String nome;
 	
@@ -30,12 +30,12 @@ public class Reparto {
 
 	public Reparto() {}
 
-	public Integer getId_reparto() {
-		return id_reparto;
+	public Integer getidReparto() {
+		return idReparto;
 	}
 
-	public void setId_reparto(Integer id_reparto) {
-		this.id_reparto = id_reparto;
+	public void setidReparto(Integer idReparto) {
+		this.idReparto = idReparto;
 	}
 
 	public String getNome() {
@@ -70,7 +70,8 @@ public class Reparto {
 	public void setNumero_personale(int numero_personale) {
 		this.numero_personale = numero_personale;
 	}
-	
+
+
 	
 	
 	
