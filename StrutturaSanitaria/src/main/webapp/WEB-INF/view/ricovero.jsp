@@ -47,9 +47,9 @@
 				<input type="date" name ="data">
 				
 		
-		<label for ="reparto">Reparto</label><br>
-		<select>
-		<option value = "Ortopedia">Ortopedia</option>
+		<label >Reparto</label><br>
+		<select name="Reparto">
+		<option value = "Ortopedia" >Ortopedia</option>
 		<option value = "Ginecoglogia">Ginecologia</option>
 		</select>
 		<input type="submit" value ="INVIO">

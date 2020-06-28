@@ -10,7 +10,7 @@
 <style>
 	body{
 	
-	background :url(CSS/analisi.jpg);
+	background :url(CSS/OK.jpg);
 	background-position:center center;
 	-webkit-background-size:cover;
 	background-size:cover;
@@ -22,9 +22,10 @@
 	max-width:600px;
 	margin:auto;
 	border-radius:5px;
-	background:#dbdcdc;
+	background:#c8d6ff;
 	padding:20px;
 	margin-top: 200px;
+	margin-right:90px;
 	
 	}
 	input [type=text],[type=date],select{
@@ -36,22 +37,48 @@
 	border-radius:4px;
 	box-sizing:border-box;
 	}
+	a{
+	
+	margin-left:250px;
+	
+	}
 	</style>
 </head>
 <body>
-		<h1>CONFERMA PRENOTAZIONE ANALISI:</h1>
-	<div class="contact-form">	
+		<h1 align="center">CONFERMA PRENOTAZIONE ANALISI:</h1>
+	<div class="contact-form">
 	<h3>RIEPILOGO PRENOTAZIONE : </h3>		
+Nome Paziente : 
 <% 
-	
-	out.println("NOME PAZIENTE : "+request.getAttribute("nome_paziente"));
-	out.println("COGNOME PAZIENTE : "+request.getAttribute("cognome_paziente"));
-	out.println("NOME RESPONSABILE : "+request.getAttribute("nome_responsabile"));
-	out.println("COGNOME RESPONSABILE : "+request.getAttribute("cognome_responsabile"));
-	out.println("CODICE RICETTA : "+request.getAttribute("cod_ricetta"));
-	out.println("IN DATA : "+request.getAttribute("data"));
-
+	out.println(request.getAttribute("nome_paziente"));
 %>
+<br>
+Cogome Paziente : 
+<% 
+	out.println(request.getAttribute("cognome_paziente"));
+%>
+<br> 
+Nome Responsabile : 
+<%	
+	out.println(request.getAttribute("nome_responsabile"));
+%>
+<br>
+Cognome Responsabile :
+<%  
+	out.println(request.getAttribute("cognome_responsabile"));
+%>
+<br>
+Codice Ricetta :
+<%	
+	out.println(request.getAttribute("cod_ricetta"));
+%>
+<br>
+Data :
+<% 	
+	out.println(request.getAttribute("data"));
+%>
+	<br><br><br>
+	<a href="homePage">HomePage</a>
 
 	</div>
 

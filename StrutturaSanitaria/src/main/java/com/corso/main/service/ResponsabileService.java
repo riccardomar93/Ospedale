@@ -6,4 +6,7 @@ import com.corso.main.model.Responsabile;
 
 public interface ResponsabileService extends JpaRepository<Responsabile, Integer> {
 
+	public Responsabile findByIdReparto(int idReparto);
+	
+	
 }

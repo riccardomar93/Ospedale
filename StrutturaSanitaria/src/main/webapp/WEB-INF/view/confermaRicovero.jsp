@@ -6,11 +6,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>CONFERMA ANALISI </title>
+<title>CONFERMA RICOVERO </title>
 <style>
 	body{
 	
-	background :url(CSS/analisi.jpg);
+	background :url(CSS/OK.jpg);
 	background-position:center center;
 	-webkit-background-size:cover;
 	background-size:cover;
@@ -22,9 +22,10 @@
 	max-width:600px;
 	margin:auto;
 	border-radius:5px;
-	background:#dbdcdc;
+	background:#c8d6ff;
 	padding:20px;
 	margin-top: 200px;
+	margin-right:90px;
 	
 	}
 	input [type=text],[type=date],select{
@@ -38,25 +39,43 @@
 	}
 	a{
 	
-	margin-left:200px;
+	margin-left:250px;
 	
 	}
 	</style>
 </head>
 <body>
-		<h1>CONFERMA PRENOTAZIONE RICOVERO:</h1>
+		<h1 align="center">CONFERMA PRENOTAZIONE RICOVERO:</h1>
 	<div class="contact-form">
 	<h3>RIEPILOGO PRENOTAZIONE : </h3>		
+Nome Paziente : 
 <% 
-	
-	out.println("NOME PAZIENTE : "+request.getAttribute("nome_paziente"));
-	out.println("COGNOME PAZIENTE : "+request.getAttribute("cognome_paziente"));
-	out.println("NOME RESPONSABILE : "+request.getAttribute("nome_responsabile"));
-	out.println("COGNOME RESPONSABILE : "+request.getAttribute("cognome_responsabile"));
-	out.println("REPARTO : "+request.getAttribute("reparto"));
-	out.println("IN DATA : "+request.getAttribute("data"));
-	
-
+	out.println(request.getAttribute("nome_paziente"));
+%>
+<br>
+Cogome Paziente : 
+<% 
+	out.println(request.getAttribute("cognome_paziente"));
+%>
+<br> 
+Nome Responsabile : 
+<%	
+	out.println(request.getAttribute("nome_responsabile"));
+%>
+<br>
+Cognome Responsabile :
+<%  
+	out.println(request.getAttribute("cognome_responsabile"));
+%>
+<br>
+Reparto :
+<%	
+	out.println(request.getAttribute("reparto"));
+%>
+<br>
+Data :
+<% 	
+	out.println(request.getAttribute("data"));
 %>
 	<br><br><br>
 	<a href="homePage">HomePage</a>

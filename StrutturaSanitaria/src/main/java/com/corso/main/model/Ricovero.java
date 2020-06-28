@@ -36,6 +36,16 @@ public class Ricovero {
 		this.nome_paziente = nome_paziente;
 		this.cognome_paziente = cognome_paziente;
 	}
+	
+
+	public Ricovero(String data_inizio, Integer idReparto, String nome_paziente, String cognome_paziente) {
+		super();
+		this.data_inizio = data_inizio;
+		this.idReparto = idReparto;
+		this.nome_paziente = nome_paziente;
+		this.cognome_paziente = cognome_paziente;
+	}
+
 
 	public Ricovero() {}
 

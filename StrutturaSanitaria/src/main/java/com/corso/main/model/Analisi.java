@@ -28,9 +28,17 @@ public class Analisi {
 		this.data = data;
 	}
 
+	public Analisi(String idRicetta, String nome_paziente, String cognome_paziente, String data) {
+		super();
+		this.idRicetta = idRicetta;
+		this.nome_paziente = nome_paziente;
+		this.cognome_paziente = cognome_paziente;
+		this.data = data;
+	}
+
 	public Analisi() {}
 
-	public String getidRicetta() {
+	public String getIdRicetta() {
 		return idRicetta;
 	}
 
